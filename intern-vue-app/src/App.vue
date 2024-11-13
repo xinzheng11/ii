@@ -2,9 +2,6 @@
   <div>
     11
   </div>
-   <hellovueVue>
-     
-   </hellovueVue>
    <hellovueVue></hellovueVue>
 </template>
 <script setup>
