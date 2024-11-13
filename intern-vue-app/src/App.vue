@@ -1,13 +1,22 @@
 <template>
   <div>
     1111
+    <hellovueVue></hellovueVue>
+    <xxVue></xxVue>
   </div>
-   <hellovueVue></hellovueVue>
+   
 </template>
 <script setup>
 import hellovueVue from "./components/hellovue.vue";
-
+import xxVue from "./components/xx.vue";
+export default {
+  components: {
+    HellovueVue,
+    XxVue,
+  },
+};
 </script>
+
 <style scoped>
 .logo {
   height: 6em;

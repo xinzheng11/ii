@@ -2,11 +2,19 @@
     <div>
         first <br>
         {{ a }}
-        <p v-for="item in arr">{{ item }}</p>
+        <li v-for="item in arr" :key="item">{{ item }}</li>
     </div>
 </template>
 
-<script setup>
-    const a = 10;
-    var  arr = [1,2,3,4,5]
+<script >
+export default {
+    data() {
+        return {
+            a : 10,
+            arr : [1,2,3,4,5]
+        }
+    },
+}
+    
 </script>
+
