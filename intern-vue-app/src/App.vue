@@ -5,6 +5,7 @@
    <hellovueVue>
      
    </hellovueVue>
+   <hellovueVue></hellovueVue>
 </template>
 <script setup>
 import hellovueVue from "./components/hellovue.vue";
