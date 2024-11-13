@@ -9,12 +9,7 @@
 <script setup>
 import hellovueVue from "./components/hellovue.vue";
 import xxVue from "./components/xx.vue";
-export default {
-  components: {
-    HellovueVue,
-    XxVue,
-  },
-};
+
 </script>
 
 <style scoped>
