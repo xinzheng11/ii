@@ -9,7 +9,17 @@
             <button @click.stop="btn">stop bubble</button>
             <a href="https://www.baidu.com" @click.prevent="btn">prevent default</a>
             <button @click.once="btn">once act once</button>
+
+        <hr>
+
+        
         </div>
+        <hr>
+        <h1>{{ msg }}</h1>
+        <button @click="rever">click</button>
+        
+        <textarea v-model="msg1"></textarea>
+        <p>Text: {{ msg1 }}</p>
  </div>
 </template>
 <script>
@@ -21,13 +31,13 @@ export default {
                 color: 'white',
                 // fontSize: '20px'
             },
+            msg : 'nimade',
+            msg1:"",
         }
     },
     methods: {
         father(){
             console.log("exterior acted");
-
-            
         },
         btn(){
             console.log("interior acted");
@@ -35,6 +45,9 @@ export default {
         },
         change(){
             this.num += 10
+        },
+        rever(){
+            this.msg = this.msg.split("").reverse().join("")
         }
     },
 }
