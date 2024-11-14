@@ -2,7 +2,7 @@
     <div>
         {{ msg }}
         <p >{{ name }}</p>
-        <button @click="name = 'nima'">click</button>
+        <button @click="name = 'nima'" style="color: white;">click</button>
     </div>
 </template>
 <script>

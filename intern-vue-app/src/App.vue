@@ -3,16 +3,19 @@
     1111
     <hellovueVue></hellovueVue>
     <xxVue></xxVue>
+    <vonVue></vonVue>
   </div>
    
 </template>
 <script setup>
 import hellovueVue from "./components/hellovue.vue";
+import vonVue from "./components/von.vue";
 import xxVue from "./components/xx.vue";
 
 </script>
 
 <style scoped>
+
 .logo {
   height: 6em;
   padding: 1.5em;
