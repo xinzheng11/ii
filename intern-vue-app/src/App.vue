@@ -1,8 +1,11 @@
 <template>
   <div>
-    1111
-    <hellovueVue></hellovueVue>
-    <xxVue></xxVue>
+    
+    <cart></cart>
+    <anli1></anli1>
+    <!-- <anli2></anli2> -->
+    <!-- <hellovueVue></hellovueVue>
+    <xxVue></xxVue> -->
     <vonVue></vonVue>
   </div>
    
@@ -11,7 +14,9 @@
 import hellovueVue from "./components/hellovue.vue";
 import vonVue from "./components/von.vue";
 import xxVue from "./components/xx.vue";
-
+import cart from "./components/cart.vue";
+import anli1 from "./components/anli1.vue";
+import anli2 from "./components/anli2.vue";
 </script>
 
 <style scoped>

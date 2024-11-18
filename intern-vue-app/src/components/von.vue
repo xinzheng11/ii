@@ -20,6 +20,15 @@
         
         <textarea v-model="msg1"></textarea>
         <p>Text: {{ msg1 }}</p>
+
+        <ul>
+            <li v-for="(item,index) in arr" :key="index">
+                <span>{{ item }}</span>
+                <button @click="del(index)">del</button>
+                
+            </li>
+            <button @click="add">generate a new</button>
+        </ul>
  </div>
 </template>
 <script>
@@ -33,6 +42,7 @@ export default {
             },
             msg : 'nimade',
             msg1:"",
+            arr:[1,3,4,56,6,1],
         }
     },
     methods: {
@@ -48,6 +58,12 @@ export default {
         },
         rever(){
             this.msg = this.msg.split("").reverse().join("")
+        },
+        del(index){
+            this.arr.splice(index,1)
+        },
+        add(){
+            this.arr.push(Math.floor(Math.random()*20))
         }
     },
 }
